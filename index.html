@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EduTeach AI</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding: 20px;
+        }
+        input, select, button {
+            margin: 10px;
+            padding: 10px;
+            width: 250px;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>EduTeach AI</h1>
+
+    <input type="text" id="grade" placeholder="Enter Grade"><br>
+    <input type="text" id="subject" placeholder="Enter Subject"><br>
+    <input type="text" id="topic" placeholder="Enter Topic"><br>
+
+    <button onclick="generate('lesson')">Generate Lesson Plan</button>
+    <button onclick="generate('assignment')">Generate Assignment</button>
+    <button onclick="generate('exam')">Generate Exam Prep</button>
+
+    <div id="output"></div>
+
+    <script>
+        function generate(type) {
+            let grade = document.getElementById("grade").value;
+            let subject = document.getElementById("subject").value;
+            let topic = document.getElementById("topic").value;
+
+            let result = "";
+
+            if (type === "lesson") {
+                result = "Lesson Plan for " + topic + " (Grade " + grade + ", " + subject + ")";
+            } 
+            else if (type === "assignment") {
+                result = "Assignment for " + topic + " (Grade " + grade + ", " + subject + ")";
+            } 
+            else {
+                result = "Exam Preparation for " + topic + " (Grade " + grade + ", " + subject + ")";
+            }
+
+            document.getElementById("output").innerText = result;
+        }
+    </script>
+
+</body>
+</html>
