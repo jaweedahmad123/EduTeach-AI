@@ -2,59 +2,154 @@
 <html>
 <head>
     <title>EduTeach AI</title>
+
     <style>
         body {
             font-family: Arial;
+            background: #f4f6f9;
             text-align: center;
             padding: 20px;
         }
-        input, select, button {
-            margin: 10px;
-            padding: 10px;
-            width: 250px;
+
+        h1 {
+            color: #2c3e50;
         }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #2d6cdf;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1b4fbf;
+        }
+
         #output {
             margin-top: 20px;
             padding: 15px;
-            border: 1px solid #ccc;
+            background: white;
+            border-radius: 10px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
         }
     </style>
 </head>
+
 <body>
 
-    <h1>EduTeach AI</h1>
+<h1>EduTeach AI</h1>
 
-    <input type="text" id="grade" placeholder="Enter Grade"><br>
-    <input type="text" id="subject" placeholder="Enter Subject"><br>
-    <input type="text" id="topic" placeholder="Enter Topic"><br>
+<div class="container">
 
-    <button onclick="generate('lesson')">Generate Lesson Plan</button>
-    <button onclick="generate('assignment')">Generate Assignment</button>
-    <button onclick="generate('exam')">Generate Exam Prep</button>
+    <input type="text" id="grade" placeholder="Enter Grade">
 
-    <div id="output"></div>
+    <input type="text" id="subject" placeholder="Enter Subject">
 
-    <script>
-        function generate(type) {
-            let grade = document.getElementById("grade").value;
-            let subject = document.getElementById("subject").value;
-            let topic = document.getElementById("topic").value;
+    <input type="text" id="topic" placeholder="Enter Topic">
 
-            let result = "";
+    <!-- NEW UNIQUE FEATURE -->
+    <select id="difficulty">
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+    </select>
 
-            if (type === "lesson") {
-                result = "Lesson Plan for " + topic + " (Grade " + grade + ", " + subject + ")";
-            } 
-            else if (type === "assignment") {
-                result = "Assignment for " + topic + " (Grade " + grade + ", " + subject + ")";
-            } 
-            else {
-                result = "Exam Preparation for " + topic + " (Grade " + grade + ", " + subject + ")";
-            }
+    <button onclick="generate('lesson')">📘 Lesson Plan</button>
+    <button onclick="generate('assignment')">📝 Assignment</button>
+    <button onclick="generate('exam')">🎯 Exam Prep</button>
 
-            document.getElementById("output").innerText = result;
-        }
-    </script>
+</div>
+
+<div id="output"></div>
+
+<script>
+
+function generate(type) {
+
+    let grade = document.getElementById("grade").value;
+    let subject = document.getElementById("subject").value;
+    let topic = document.getElementById("topic").value;
+    let difficulty = document.getElementById("difficulty").value;
+
+    let result = "";
+
+    if (type === "lesson") {
+        result = `
+        📘 LESSON PLAN (5E Model)
+
+        Engage: Ask students about ${topic}.
+        Explore: Activity related to ${topic}.
+        Explain: Teacher explains key concepts.
+        Elaborate: Students apply knowledge.
+        Evaluate: Quiz on ${topic}.
+
+        📗 RADEC Model:
+        Read → Answer → Discuss → Explain → Create
+
+        Difficulty: ${difficulty}
+        `;
+    }
+
+    else if (type === "assignment") {
+        result = `
+        📝 ASSIGNMENT
+
+        MCQs:
+        1. What is ${topic}?
+        2. Define key concept.
+
+        Short Questions:
+        - Explain ${topic}
+        - Importance of ${topic}
+
+        Long Question:
+        - Write detailed note on ${topic}
+
+        Difficulty: ${difficulty}
+        `;
+    }
+
+    else {
+        result = `
+        🎯 EXAM PREPARATION
+
+        Important Topics:
+        - ${topic} basics
+        - Key definitions
+
+        Tips:
+        - Revise daily
+        - Practice questions
+
+        Difficulty: ${difficulty}
+        `;
+    }
+
+    document.getElementById("output").innerText = result;
+}
+
+</script>
 
 </body>
 </html>
