@@ -126,3 +126,10 @@ This helps students learn faster and improve their understanding.
 # 🧠 AI Feature
 
 EduTeach AI uses custom instructions for its AI tutor:
+---
+
+# 👨‍💻 Author
+
+**Javeed Ahmad**
+
+AI Application Final Project - 2026
