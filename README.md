@@ -2,17 +2,17 @@
 
 ## 🌐 Live Demo
 
-(Add your deployed GitHub Pages/Vercel link here)
+(Add your deployed application link here)
 
 ---
 
-## 📌 Project Overview
+# 📌 Project Overview
 
-EduTeach AI is an AI-powered educational chatbot designed to help students understand difficult concepts through simple explanations and examples.
+EduTeach AI is an AI-powered educational chatbot designed to help students learn difficult concepts through simple explanations and examples.
 
-The idea behind this project came from a real student problem: many learners struggle to get quick guidance when they are studying alone. EduTeach AI works as a personal digital tutor that provides instant learning support.
+The main purpose of this project is to provide students with a personal digital learning assistant where they can ask questions and receive instant educational support.
 
-The application supports subjects including:
+The application helps students from different subjects including:
 
 - Biology
 - Chemistry
@@ -21,56 +21,108 @@ The application supports subjects including:
 
 ---
 
-# 🎯 Problem It Solves
+# 🎯 Problem Statement
 
-Students often face challenges such as:
+Many students face difficulties when studying alone because they need quick explanations and guidance.
 
-- Difficulty understanding complex topics
-- Lack of immediate academic support
-- Need for simple explanations before exams
-- Searching different sources for basic concepts
+EduTeach AI solves this problem by providing:
 
-EduTeach AI provides a simple platform where students can ask questions and receive educational answers instantly.
+- Instant answers
+- Simple explanations
+- Concept-based learning
+- Easy examples for better understanding
 
 ---
 
-# ✨ Features
+# ✨ Main Features
 
 ## 🤖 AI Study Assistant
 
-- Answers student questions
+- Answers educational questions
 - Explains concepts in simple language
-- Provides examples for better understanding
+- Provides examples
 - Works as a virtual tutor
 
 ## 📚 Multiple Subjects
 
-Currently supports:
+The chatbot supports:
 
 ✅ Biology  
 ✅ Chemistry  
 ✅ Physics  
 ✅ English  
 
-## 💬 Interactive Chat System
+## 💬 Interactive Learning
 
 Students can:
 
 - Enter their name
-- Select subject
+- Select their subject
 - Ask questions
-- Receive AI-generated explanations
+- Receive AI-generated answers
 
-## 🎓 Student-Friendly Learning
+---
 
-The system focuses on:
+# 🖥️ Application Workflow
 
-- Easy explanations
-- Concept understanding
-- Beginner-friendly answers
+## 1. 🏠 Home Page
+
+![Home Page](Screenshot%202026-07-27%20214729.png)
+
+The home page is the starting point of EduTeach AI.
+
+It introduces the application and allows users to enter the learning environment.
+
+The purpose of this page is to provide a simple and user-friendly beginning for students.
+
+---
+
+## 2. 🔐 Student Login / Information Section
+
+![Login Page](Screenshot%202026-07-27%20223535.png)
+
+In this section, students provide basic information before starting their learning session.
+
+Students can:
+
+- Enter their name
+- Select their subject
+- Prepare the chatbot for personalized learning
+
+This makes the learning experience more interactive.
+
+---
+
+## 3. 💬 AI Chat Interface
+
+![Chat Interface](Screenshot%202026-07-27%20224316.png)
+
+The chat interface allows students to ask questions related to their selected subject.
+
+For example:
+
+- "What is DNA?"
+- "What is periodic table?"
+- "What is a noun?"
+
+The AI assistant analyzes the question and provides an easy explanation.
+
+---
+
+## 4. ✅ AI Generated Result
+
+After receiving the student's question, EduTeach AI provides a clear educational response.
+
+The answer focuses on:
+
+- Simple explanation
+- Important concepts
+- Examples for better understanding
+
+This helps students learn faster and improve their understanding.
 
 ---
 
 # 🧠 AI Feature
 
-The AI tutor follows custom instructions:
+EduTeach AI uses custom instructions for its AI tutor:
