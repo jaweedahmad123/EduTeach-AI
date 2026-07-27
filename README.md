@@ -101,7 +101,7 @@ The chat interface allows students to ask questions related to their selected su
 
 For example:
 
-- "What is DNA?"
+- "What is DNA?" 
 - "What is periodic table?"
 - "What is a noun?"
 
