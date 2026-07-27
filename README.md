@@ -67,8 +67,7 @@ Students can:
 
 ## 1. 🏠 Home Page
 
-![Home Page](Screenshot%202026-07-27%20214729.png)
-
+![Chat Interface](Screenshot%202026-07-27%20224316.png)
 The home page is the starting point of EduTeach AI.
 
 It introduces the application and allows users to enter the learning environment.
@@ -79,7 +78,8 @@ The purpose of this page is to provide a simple and user-friendly beginning for 
 
 ## 2. 🔐 Student Login / Information Section
 
-![Login Page](Screenshot%202026-07-27%20223535.png)
+![Home Page](Screenshot%202026-07-27%20214729.png)
+
 
 In this section, students provide basic information before starting their learning session.
 
@@ -95,7 +95,7 @@ This makes the learning experience more interactive.
 
 ## 3. 💬 AI Chat Interface
 
-![Chat Interface](Screenshot%202026-07-27%20224316.png)
+![Login Page](Screenshot%202026-07-27%20223535.png)
 
 The chat interface allows students to ask questions related to their selected subject.
 
